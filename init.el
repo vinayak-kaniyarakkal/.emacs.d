@@ -8,11 +8,11 @@
  ;; Colors
  ;; ====== 
 
-(set-background-color "#191919")
+(set-background-color "#200020")
 (set-foreground-color "green")
-(set-face-foreground 'mode-line "#191919")
+(set-face-foreground 'mode-line "#200020")
 
- ;; Hiding bars
+ ;; Hiding bars 
  ;; =========== 
 
 (tool-bar-mode 0)
@@ -23,7 +23,7 @@
  ;; ==================
 
 ;; font size and line spacing
-(set-face-attribute 'default nil :height 175)
+(set-face-attribute 'default nil :height 180)
 (setq line-spacing 3)
 ;; line numbering
 (global-linum-mode t)
@@ -49,7 +49,42 @@
 
  ;; Others
  ;;=======
-(setq initial-major-mode 'python-mode)
+(setq initial-major-mode 'python-mode) 
 (setq visible-bell t)
 (put 'narrow-to-region 'disabled nil)
 (setq frame-title-format '((:eval default-directory)))
+
+;; Fonts 
+(set-frame-font "Inconsolata-14")
+
+;; Package stuff
+
+(require 'package)
+
+(setq package-archives '(("org" . "http://orgmode.org/elpa/")
+			 ("gnu" . "http://elpa.gnu.org/packages/")
+			 ("marmalade" . "http://marmalade-repo.org/packages/")
+			 ("melpa" . "http://melpa.milkbox.net/packages/"))) 
+
+(package-initialize)
+
+
+;; ;; smex-mode
+;; ;; bind Caps-Lock to smex
+;; (when (eq window-system 'x)
+;;   (shell-command "xmodmap -e 'clear Lock' -e 'keycode 66 = F13'"))
+;; (global-set-key (kbd "M-x") 'smex)
+;; (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+
+;; desktop-mode
+(desktop-save-mode t)
+(setq desktop-files-not-to-save "^$")
+(add-to-list 'desktop-modes-not-to-save 'dired-mode)
+(add-to-list 'desktop-modes-not-to-save 'help-mode)
+(add-to-list 'desktop-modes-not-to-save 'magit-mode)
+(add-to-list 'desktop-modes-not-to-save 'fundamental-mode)
+(add-to-list 'desktop-modes-not-to-save 'completion-list-mode)
+(define-key global-map (kbd "C-c s") 'desktop-save-in-desktop-dir)
+

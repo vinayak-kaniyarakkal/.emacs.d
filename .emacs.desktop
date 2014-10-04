@@ -1,0 +1,95 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Oct  3 15:35:16 2014
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("magit" "deskto" "smex" "emx" "space"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/media/user/Data/Vinayak/programming/Broadcaster/.git/COMMIT_EDITMSG" "~/.emacs.d.jaseem/init.el" "~/.emacs.d.jaseem/ini" "~/.emacs.d.jaseem/" "/media/user/Data/Vinayak/programming/Broadcaster/.git/COMMIT_EDITMSG" "/media/user/" "~/.i3/config" "~/.emacs.d/" "~/.smex-items" "~/.i3/config" "~/.emacs.d.jaseem/init.el" "~/.emacs.d/init.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/user/Python Error.jpg"
+  "Python Error.jpg"
+  'python-mode
+  '(linum-mode)
+  184360
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . no-conversion)))
+
+(desktop-create-buffer 206
+  "/home/user/.bashrc"
+  ".bashrc"
+  'sh-mode
+  '(linum-mode)
+  3912
+  '(4146 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/user/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(linum-mode)
+  2419
+  '(1995 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/user/.i3/i3status.conf"
+  "i3status.conf"
+  'conf-unix-mode
+  '(linum-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/user/.i3/config"
+  "config"
+  'conf-space-mode
+  '(linum-mode)
+  1
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/etc/passwd"
+  "passwd"
+  'conf-colon-mode
+  '(linum-mode)
+  1
+  '(nil nil)
+  t
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/user/.emacs.d.jaseem/init.el"
+  "init.el<2>"
+  'emacs-lisp-mode
+  '(linum-mode)
+  342
+  '(7939 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
