@@ -116,9 +116,5 @@
 ;; (setq py-autopep8-options '("--max-line-length=80"))
 (define-key global-map (kbd "s-w") 'save-buffer)
 
-
-(global-set-key (kbd "C-<up>") (kbd "{{ SPC SPC }} C-b C-b C-b"))
-(global-set-key (kbd "C-<down>") (kbd "{% SPC SPC %} C-b C-b C-b"))
-
-;;move-beginning-of-line
-
+(global-set-key (kbd "C-c [") (kbd "{{ SPC SPC }} C-b C-b C-b"))
+(global-set-key (kbd "C-c ]") (kbd "{% SPC SPC %} C-b C-b C-b"))
